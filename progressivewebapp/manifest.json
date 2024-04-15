@@ -1,0 +1,21 @@
+{
+    "name": "Euphoria",
+    "short_name": "Find your Destination",
+    "start_url": ".",
+    "background_color": "teal",
+    "theme_color": "#008080",
+    "display": "standalone",
+    "permissions": ["notifications"],
+    "icons": [
+        {
+            "src": "images/logo64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo512.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

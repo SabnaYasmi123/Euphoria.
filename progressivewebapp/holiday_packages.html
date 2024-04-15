@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="card">
+            <img src="images/himachal.jpg" alt="Himachal">
+            <div class="banner">Himachal</div>
+        </div>
+        <div class="card">
+            <img src="images/kashmir.jpg" alt="Kashmir">
+            <div class="banner">Kashmir</div>
+        </div>
+        <div class="card">
+            <img src="images/thailand.jpg" alt="Thailand">
+            <div class="banner">Thailand</div>
+        </div>
+        <div class="card">
+            <img src="images/goa.jpg" alt="Goa">
+            <div class="banner">Goa</div>
+        </div>
+        <div class="card">
+            <img src="images/Andaman.jpg" alt="Andaman">
+            <div class="banner">Andaman</div>
+        </div>
+        <div class="card">
+            <img src="images/northeast.jpg" alt="North-East">
+            <div class="banner">North-East</div>
+        </div>
+        <div class="card">
+            <img src="images/south_india_tour.jpg" alt="Kerala">
+            <div class="banner">Kerala</div>
+        </div>
+        <div class="card">
+            <img src="images/bhutan.jpg" alt="Bhutan">
+            <div class="banner">Bhutan</div>
+        </div>
+        <div class="card">
+            <img src="images/historical_tours.jpg" alt="Rajasthan">
+            <div class="banner">Rajasthan</div>
+        </div>
+        <div class="card">
+            <img src="images/bali.jpg" alt="Bali">
+            <div class="banner">Bali</div>
+        </div>
+        <div class="card">
+            <img src="images/Europe.jpg" alt="Europe">
+            <div class="banner">Europe</div>
+        </div>
+        <div class="card">
+            <img src="images/singapore.jpg" alt="Singapore">
+            <div class="banner">Singapore</div>
+        </div>
+        <!-- Add more cards here -->
+        <!-- Repeat the structure for other destinations -->
+    </div>
+
+    <style>
+        /* CSS styles for the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Adjust width as needed */
+            /* You can also set a specific height for the cards if necessary */
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Adjust height as needed */
+            object-fit: cover;
+        }
+
+        .banner {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trains History</title>
+    <style>
+        /* Add your CSS styles here */
+       body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2; /* Set background color for the body */
+}
+
+.top-appbar {
+            width: 100%;
+            background-color: teal; /* Set background color to teal */
+            padding: 10px 0; /* Add padding to top and bottom */
+            text-align: center;
+            color: white; /* Set text color to white */
+            font-size: 24px; /* Set font size */
+            margin-bottom: 20px; /* Add margin to separate from other content */
+        }
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+    margin-top: 10px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.card {
+    border: 2px solid teal; /* Set border color to teal */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Set background color for the card */
+}
+
+.card p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.card-container {
+    background-color: #fff; /* Set background color for the card container */
+}
+    </style>
+</head>
+<body>
+    <div class="top-appbar">
+        Trains History
+    </div>
+
+<div id="trainDetails" class="card-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+<script src="trainshistory.js"></script>
+</body>
+</html>

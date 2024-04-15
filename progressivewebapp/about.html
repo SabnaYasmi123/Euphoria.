@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking History</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #cccccc; /* Set background color */
+            background-image: url("images/sea.jpg"); /* Background image URL */
+            background-size: cover; /* Adjusts the size of the background image */
+            background-position: center;
+            padding: 0 20px; /* Add padding to the sides */
+        }
+
+        .left-column,
+        .right-column {
+            width: 45%; /* Set width for columns */
+            padding: 20px; /* Add padding */
+        }
+
+        .left-column {
+            border-right: 2px solid #cccccc; /* Add border between columns */
+        }
+
+        .top-appbar {
+            width: 100%;
+            background-color: teal; /* Set background color to teal */
+            padding: 10px 0; /* Add padding to top and bottom */
+            text-align: center;
+            color: white; /* Set text color to white */
+            font-size: 24px; /* Set font size */
+            margin-bottom: 20px; /* Add margin to separate from other content */
+        }
+
+        .card {
+            border: 2px solid teal; /* Set border color to teal */
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            cursor: pointer; /* Add cursor pointer to indicate clickable element */
+            background-color:#f2f2f2; /* Set background color to grey */
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .dropdown {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="left-column">
+    <div class="top-appbar">
+        Booking History
+    </div>
+
+    <!-- Flights Card -->
+    <div class="card" onclick="redirectToFlights()">
+        <h2>Flights</h2>
+        <div class="dropdown">
+            <h3>Your prior amazing flights</h3>
+            <!-- Dropdown content here -->
+        </div>
+    </div>
+
+    <!-- Hotel Card -->
+    <div class="card" onclick="redirectToHotels()">
+        <h2>Hotels</h2>
+        <div class="dropdown">
+            <h3>Your previous hotel bookings</h3>
+            <!-- Dropdown content here -->
+        </div>
+    </div>
+
+    <!-- Train Card -->
+    <div class="card" onclick="redirectToTrains()">
+        <h2>Trains</h2>
+        <div class="dropdown">
+            <h3>Your train travel history</h3>
+            <!-- Dropdown content here -->
+        </div>
+    </div>
+</div>
+
+<div class="right-column">
+    <div class="top-appbar">
+        Upcoming Events
+    </div>
+
+    <div class="card" onclick="redirectToupcomingFlights()">
+        <h2>Flights</h2>
+        <div class="dropdown">
+            <h3>Your prior amazing flights</h3>
+            <!-- Dropdown content here -->
+        </div>
+    </div>
+
+    <!-- Hotel Card -->
+    <div class="card" onclick="redirectupcomingToHotels()">
+        <h2>Hotels</h2>
+        <div class="dropdown">
+            <h3>Your previous hotel bookings</h3>
+            <!-- Dropdown content here -->
+        </div>
+    </div>
+
+    <!-- Train Card -->
+    <div class="card" onclick="redirectToupcomingTrains()">
+        <h2>Trains</h2>
+        <div class="dropdown">
+            <h3>Your train travel history</h3>
+            <!-- Dropdown content here -->
+        </div>
+    </div>
+
+<script src="about.js"></script>
+</body>
+</html>

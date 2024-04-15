@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Form | Firebase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9; /* Light gray background */
+      background-image: url("images/sea.jpg"); /* Background image URL */
+      background-size: cover; /* Adjusts the size of the background image */
+      background-position: center; 
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-size: cover; /* Adjusts the size of the background image */
+      background-position: center;
+      background-color: #fff; /* White background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    select,
+    input[type="date"] {
+      width: calc(100% - 22px); /* Adjusted width */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #008080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005353;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="FlightForm">
+      <div class="form-group">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" placeholder="Enter origin">
+      </div>
+      <div class="form-group">
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" placeholder="Enter destination">
+      </div>
+      <div class="form-group">
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date">
+      </div>
+      <div class="form-group">
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date">
+      </div>
+      <div class="form-group">
+        <label for="travellers">Travellers:</label>
+        <select id="travellers" name="travellers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <button type="submit" id="addFlightBtn"> Submit</button>
+    </form>
+  </div>
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+  <script src="flight.js"></script>  </body>
+</html>

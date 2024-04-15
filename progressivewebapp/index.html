@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#008080">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>Euphoria</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the card elements
+            var login = document.getElementById('loginLink');
+            var flightsCard = document.getElementById('flightsCard');
+            var hotelsCard = document.getElementById('hotelsCard');
+            var trainsCard = document.getElementById('trainsCard');
+            var holidayPackagesCard = document.getElementById('holidayPackagesCard');
+            var homestayAndVillasCard = document.getElementById('homestayAndVillasCard');
+
+            // Add event listener for each card
+            login.addEventListener('click', function() {
+                window.location.href = 'login.html'; // Redirect to the flights page
+            });
+
+            flightsCard.addEventListener('click', function() {
+                window.location.href = 'flights.html'; // Redirect to the flights page
+            });
+
+            hotelsCard.addEventListener('click', function() {
+                window.location.href = 'hotels.html'; // Redirect to the hotels page
+            });
+
+            trainsCard.addEventListener('click', function() {
+                window.location.href = 'train.html'; // Redirect to the trains page
+            });
+
+            holidayPackagesCard.addEventListener('click', function() {
+                window.location.href = 'holiday_packages.html'; // Redirect to the holiday packages page
+            });
+
+            homestayAndVillasCard.addEventListener('click', function() {
+                window.location.href = 'homestay_and_villas.html'; // Redirect to the homestay and villas page
+            });
+
+            
+        });
+    </script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <!-- Left-side menu bar icon -->
+        <div id="menuIcon" onclick="openNewPage()">
+            <img src="images/menuicon.png" alt="Menu Icon">
+        </div>
+
+        <!-- App icon and name -->
+        <div id="appInfo">
+            <img src="images/logo64.png" alt="App Icon">
+            <h2>Euphoria</h2>
+        </div>
+
+        <!-- Login link -->
+        <div id="loginLink">
+            <a href="#" onclick="openLogin()" class="show" id="loginbtn">Login</a>
+        </div>
+        <button class="hidden" id="logoutbtn" type="button">Logout</button>
+    </div>
+
+
+    <!-- Card views -->
+    <div id="cardContainer">
+        <div class="card" id="flightsCard">
+            <img src="images/airplane.png" alt="Flights">
+            <h3>Flights</h3>
+        </div>
+        <div class="card" id="hotelsCard">
+            <img src="images/hotel.png" alt="Hotels">
+            <h3>Hotels</h3>
+        </div>
+        <div class="card" id="trainsCard">
+            <img src="images/rail.png" alt="Trains">
+            <h3>Trains</h3>
+        </div>
+        <div class="card" id="holidayPackagesCard">
+            <img src="images/calendar.png" alt="Holiday Packages">
+            <h3>Holiday Packages</h3>
+        </div>
+        <div class="card" id="homestayAndVillasCard">
+            <img src="images/homestay.png" alt="Homestay and Villas">
+            <h3>Homestay and Villas</h3>
+        </div>
+    </div>
+
+    <!-- Text section -->
+    <div id="textSection">
+        <p class="bold">Live with no excuses and travel with no regrets</p>
+    </div>
+
+    <!-- Gallery section -->
+    <div id="gallery">
+        <div class="galleryItem">
+            <img src="images/historical_tours.jpg" alt="Historical Tours">
+            <p>Historical Tours</p>
+        </div>
+        <div class="galleryItem">
+            <img src="images/honeymoon_tour.jpg" alt="Honeymoon Tours">
+            <p>Honeymoon Tours</p>
+        </div>
+        <div class="galleryItem">
+            <img src="images/south_india_tour.jpg" alt="South India Tours">
+            <p>South India Tours</p>
+        </div>
+        <div class="galleryItem">
+            <img src="images/temple_tours.jpg" alt="Temple Tours">
+            <p>Temple Tours</p>
+        </div>
+        <div class="galleryItem">
+            <img src="images/paragliding.jpg" alt="Adventure Tours">
+            <p>Adventure Tours</p>
+        </div>
+        <div class="galleryItem">
+            <img src="images/hill_station_tours.jpg" alt="Hill Station Tours">
+            <p>Hill Station Tours</p>
+        </div>
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script> -->
+
+<!-- Add Firebase products that you want to use -->
+<!-- <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+<script src="script.js"></script>
+<!-- <script src="mail.js"></script> -->
+</body>
+</html>
